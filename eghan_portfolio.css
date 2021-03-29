@@ -1,0 +1,124 @@
+.body_container {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: auto;
+  background-color: beige;
+  margin-bottom: 20%;
+  margin-top: 5%;
+}
+.introduction{
+    text-align: center;
+}
+.introduction img{
+    width: 200px;
+    height: 180px;
+    border-radius: 70px;
+    box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
+    transition: all ease-in-out .2s;
+    margin-top: 30px;
+    filter: brightness(1.2);
+}
+.introduction img:hover {
+    cursor: pointer;
+  box-shadow: 0 8px 12px 0 rgba(34,60,80,.16);
+}
+
+h2{
+    font-family:sans-serif;
+    font-style: italic;
+}
+
+h3{
+    text-align: center;
+    font-family: monospace;
+}
+li,p{
+    font-family: monospace;  
+    text-align: center; 
+}
+.about_grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align:center;
+}
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+ul{
+list-style: none;
+text-decoration: none;
+padding: 0px;
+}
+
+.project_grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding:0px;
+    margin:0px;
+}
+
+.project_grid img{
+    justify-self: center;
+    padding: 2px;
+    width: 250px;
+    height: 150px;
+    border-radius: 40px;
+    margin-left: 80px;
+    margin-right: 40px;
+}
+.project_grid img{
+    filter: brightness(1.25);
+}
+
+.project_grid img:hover{
+    filter: brightness(1.5);
+    background-color: cadetblue;
+}
+
+.links-and-contact {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.links {
+  justify-self: center;
+}
+
+.links-list {
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 650px) {
+  .links-and-contact {
+    grid-template-columns: 100%;
+  }
+}
+
+form{
+    
+}
+text{
+    width: 50%;
+    padding: 5px;
+}
+textarea{
+    width:56%;
+    border: 3px solid #cccccc;
+    padding: 10px;
+    font-family: Tahoma, sans-serif; 
+  }
+
+ input[type=submit]{
+  width: 65%;
+  border: 3px solid #cccccc;
+  color:black;
+  padding: 10px;
+  cursor: pointer;
+}
+
+h4{
+    text-align: right;
+}
