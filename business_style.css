@@ -1,0 +1,164 @@
+
+/* 888888888888 style attribtes fo my breakfast html */
+
+  /* ONE  set image for the entire page...ie the body*/
+  body { background-image:
+        linear-gradient(to bottom, rgba(255,99,71,0.5),
+          rgba(107, 9, 93, 0.3)),
+        url("index.jpeg"); /*body background image*/
+         }
+
+
+/*TWO 888888888 the navigation layout 8888888888888*/
+/* 3  styles needed: 1.element,2.element content,3.elemen hover*/
+
+ul {  /* style the outer element */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:gray;
+  /*position: fixed;*/
+  /*top: 0;*/
+  /*width: 100%;*/
+  /*display:flex;*/
+  /*padding:5px;  create space around element's content, inside of defined borders*/
+}
+
+li {
+  float: left;
+}
+
+/* syle the list in the navigations*/
+li a, .dropbtn { /* style the nav content*/
+  /*flex:auto; the extra space is distributed proportionally*/
+  display:inline-block;
+  text-decoration:none;
+  text-align:center;
+  background:white;
+  color:tomato;  /*text color */
+  margin:15px; /*auto /*create space around elements content, outside of any defined borders*/ 
+  padding:10px;  /*create space around element's content, inside of any defined borders*/
+}
+
+/*hovering with mouse click*/
+li a:hover, .dropdown:hover .dropbtn {  /*hover over nav content*/
+  outline:1px solid red ;
+  background-color:blue;
+  text-decoration:underline;
+}
+
+/* 88888888 Dropdown level for navigation lables 888888*/
+/*4 styling needed: 1.drop parent;2.drop content;
+   3. drop content hover; 4.links within drop content */
+
+   /*start with outer dropdowm container*/
+    li.dropdown {
+       /*position:relative;  dropdown content to be placed right below the dropdown button*/
+       display: inline-block;
+     }
+             /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+            display:none;
+            position: absolute;
+            background-color: #f9f9f9;
+            /*width: 100%;*/
+            /*right: 0;*/
+            overflow: auto;
+            box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.2);/* make the dropdown menu look like a "card".*/
+            padding:1px;
+            z-index: 1; /* he z-index property specifies the stack order of an element */
+             }
+  /* Links inside the dropdown */
+    .dropdown-content a {
+               display: block;
+                color: black;
+               padding: 9px;
+              text-decoration: none;
+                text-align:left;
+              /*flex-direction:column;*/
+            }
+
+
+  /* Change color of dropdown links on hover
+      we hover over the dropdown content */
+    .dropdown:hover .dropdown-content {display: block;}
+
+
+ /*THREE 88888888888888  first section layout..our logo 88888888888 */
+
+     /* image and text write up in image*/
+.container { position: relative;
+display: flex;
+justify-content:space-around;
+margin-bottom: 20px;
+/*border:solid;*/
+padding: 30px;
+border-style: dotted solid;
+  /*border-radius:25px;   four corners style of border*/
+  /*border-width:4px; */
+  /*border-bottom: 6px solid red;*/
+}
+
+.img{
+  position: relative;
+  margin-top:10px;
+}
+
+/* text syle in image*/
+.topleft {
+  position: absolute;
+  top: 0;
+  /*left:0;*/
+  font-size:30px;
+  font-family: cursive;
+}
+
+/* creating css box model */
+.boxx{ 
+  border: 15px solid block;  /*create a block*/
+   width: 200px;
+  padding: 30px;
+  margin: 10px;
+background-color: lightgrey;
+color: red;
+text-align:center;
+}     
+
+/* FOUR 88888888888 2nd section layout with pictures display 88888*/
+/* add the box-sizing property to make sure that the image
+ container doesn't break due to extra padding*/
+* {
+  box-sizing: border-box;
+}
+
+/* float property specifies how an element should float.*/
+.img-container {
+  float:left;
+  width:20%;
+  padding:50px;
+}
+
+/*  clear property specifies what elements can
+ float beside the cleared element and on which side.*/
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;  /* display in table form*/
+}
+
+  
+ /* 888888 styling article layout with border88888*/ 
+article { 
+  /*border style*/
+  /*border-style: dotted solid;*/
+  /*border-radius:25px;   four corners style of border*/
+  /*border-width:4px; */
+  /*border-bottom: 6px solid red;*/
+  padding: 20px; 
+  height: 80px;   
+  font-weight:bold; 
+  font-family:cursive;  /*font style*/
+  text-align: center;
+  font-size:20px
+}
