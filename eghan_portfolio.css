@@ -1,3 +1,6 @@
+/* this is the css file for creating the porfolio */
+
+/* sytle the main body */
 .body_container {
   max-width: 840px;
   margin: 0 auto;
@@ -6,9 +9,12 @@
   margin-bottom: 20%;
   margin-top: 5%;
 }
+
+/* style the intro section */
 .introduction{
     text-align: center;
 }
+/* style the image used in intro section */
 .introduction img{
     width: 200px;
     height: 180px;
@@ -18,11 +24,12 @@
     margin-top: 30px;
     filter: brightness(1.2);
 }
+/* hover over the image in intro section */
 .introduction img:hover {
     cursor: pointer;
   box-shadow: 0 8px 12px 0 rgba(34,60,80,.16);
 }
-
+/* style header(h2,h3,h4),paragraph(p), list(li)*/
 h2{
     font-family:sans-serif;
     font-style: italic;
@@ -32,15 +39,21 @@ h3{
     text-align: center;
     font-family: monospace;
 }
+h4{
+    text-align: right;
+}
+
 li,p{
     font-family: monospace;  
     text-align: center; 
 }
+/* style the grid layout in about section */
 .about_grid{
     display: grid;
     grid-template-columns: 50% 50%;
     text-align:center;
 }
+/* style the horizontal rule used */
 hr {
   border: 0;
   height: 1px;
@@ -53,13 +66,14 @@ text-decoration: none;
 padding: 0px;
 }
 
+/* style the grid layout for the project holder section */
 .project_grid{
     display: grid;
     grid-template-columns: auto auto;
     padding:0px;
     margin:0px;
 }
-
+/* style the images used in the project section and hover on image */
 .project_grid img{
     justify-self: center;
     padding: 2px;
@@ -77,7 +91,7 @@ padding: 0px;
     filter: brightness(1.5);
     background-color: cadetblue;
 }
-
+/* style the final  section on links and contact*/
 .links-and-contact {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -85,21 +99,13 @@ padding: 0px;
 .links {
   justify-self: center;
 }
-
+/* style the listed links */
 .links-list {
   list-style: none;
   padding: 0;
 }
 
-@media (max-width: 650px) {
-  .links-and-contact {
-    grid-template-columns: 100%;
-  }
-}
-
-form{
-    
-}
+/* style forms for the contact */
 text{
     width: 50%;
     padding: 5px;
@@ -110,8 +116,7 @@ textarea{
     padding: 10px;
     font-family: Tahoma, sans-serif; 
   }
-
- input[type=submit]{
+input[type=submit]{
   width: 65%;
   border: 3px solid #cccccc;
   color:black;
@@ -119,6 +124,13 @@ textarea{
   cursor: pointer;
 }
 
-h4{
-    text-align: right;
+/* widowing the web on differnt platforms viewpoint */
+@media (max-width: 650px) {
+  .links-and-contact {
+    grid-template-columns: 100%;
+  }
 }
+
+
+
+
