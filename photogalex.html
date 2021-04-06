@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>bootweb</title>
+  <!-- embedded style sheet -->
+  <style>
+   /* remove the default margins and padding in the browser */
+    *{
+        margin: 0;
+        padding: 0;
+        }
+
+  /* style the mother navigation element */
+  nav{
+    height: 60px;
+    background-color:darkslategrey;
+    color: white; /*change text color*/
+  }
+  /* style the child container in nav */
+ .menu-container{
+  display: flex;
+  justify-content:space-between;
+  padding: 15px;
+  }
+  /* style archor in child container */
+ .menu-container a{
+    text-decoration: none;
+    color:black;
+    padding: 5px;
+    background-color:white;
+   }
+  /* style section for image placements */
+  #content-section{
+  margin: 35px;
+   }
+ /* style the child container layout for images*/
+  .imagegrid{
+   display: grid;
+   /* minwidth--250px n maxwidth--1fr ..auto-fit gives
+   it fixed position...repeat --repeat itsef*/
+   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+   grid-gap:2px;
+   }
+ /* style each image in the layout  */
+  .imagegrid img{
+   width: 250px;
+   height: 250px;
+   }
+ /* hover over the images */
+  .imagegrid img:hover{
+   cursor: pointer;
+  }
+/* style beneath descriptions of images */
+  .img-describe{
+   margin-bottom: 20px;
+   background-color: aliceblue;
+   width: 250px;  /*same width as image width */
+  }
+/* style author in the description */
+ .autor{
+   text-align:right;
+   font-family: cursive;
+   color:rgb(59, 43, 43);
+   font-size: small;
+  }
+/* style h3 and archor */
+  h3 a{
+   color: cadetblue;
+   text-decoration: none;
+   }
+ </style>
+</head>
+
+<body>
+<div>
+  <nav id="navbar">
+    <div class="menu-container">
+     <h1>Brand</h1>
+     <a href="bootform.html">Add Post</a>
+    </div>
+  </nav>
+</div>
+
+  <div id="content-section">
+    <h1>Recent posts </h1>
+    <div class="imagegrid">
+
+      <div class="img-container">
+        <div >
+         <img src="img-40.jpg" alt="">
+        </div>
+        <div class="img-describe">
+        <h3><a href="">Lorem ipsum dolor sit amet consectetur</a></h3><br>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, incidunt. </p><br>
+        <h6 class="autor">Author:<span>John Doe</span></h6>
+        </div>
+      </div>
+
+      <div class="img-container">
+        <div >
+         <img src="img-37.jpg" alt="">
+        </div>
+        <div  class="img-describe">
+          <h3><a href="">Lorem ipsum dolor sit amet consectetur</a></h3><br>
+          <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, incidunt. </p><br>
+          <h6 class="autor">Author:<span>John Doe</span></h6>
+        </div>
+      </div>
+
+      <div class="img-container">
+        <div >
+         <img src="img-19.jpg" alt="">
+        </div>
+        <div  class="img-describe">
+          <h3><a href="">Lorem ipsum dolor sit amet consectetur</a></h3><br>
+          <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, incidunt. </p><br>
+          <h6 class="autor">Author:<span>John Doe</span></h6>
+        </div>
+      </div>
+
+      <div class="img-container">
+        <div >
+         <img src="img-40.jpg" alt="">
+        </div>
+        <div  class="img-describe">
+          <h3><a href="">Lorem ipsum dolor sit amet consectetur</a></h3><br>
+          <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, incidunt. </p><br>
+          <h6 class="autor">Author:<span>John Doe</span></h6>
+        </div>
+      </div>
+
+      <div class="img-container">
+        <div >
+         <img src="img-19.jpg" alt="">
+        </div>
+        <div  class="img-describe">
+          <h3><a href="">Lorem ipsum dolor sit amet consectetur</a></h3><br>
+          <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, incidunt. </p><br>
+          <h6 class="autor">Author:<span>John Doe</span></h6>
+        </div>
+      </div>
+
+      
+       
+
+    </div>
+  </div>
+
+</body>
+</html>

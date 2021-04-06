@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>bootform</title>
+<style>
+     *{
+        margin: 0;
+        padding: 0;
+        /* background-color: bisque; */
+        }
+
+  /* style the navigation element */
+  nav{
+    height: 60px;
+    background-color:darkslategrey;
+    color: white; /*change text color*/
+  }
+
+ .menu-container{
+ display: flex;
+ justify-content:space-between;
+ padding: 15px;
+  }
+  .menu-container a{
+    border: 1px solid;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+  }
+
+p{
+  font-size: larger;
+}
+
+  #form-wrapper{
+      height: 1000px;
+      width: 600px;
+     margin: auto auto;
+     padding: 50px;
+     background-color:whitesmoke;
+  }
+/* style all inputs of the form */
+.form-input {
+    /* display: block; */
+    width: 100%;
+    resize: none;
+    height: 60px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(231, 231, 231);
+   }
+   /*style submit button  */
+   .submit-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+  
+   }
+
+  </style>
+</head>
+
+<body>
+<div>
+  <nav >
+    <div class="menu-container">
+     <h1>Brand</h1>
+     <a href="">Add Post</a>
+    </div>
+  </nav>
+</div>
+
+<div id=form-wrapper>
+        <form  action=""  method="POST">
+           <p>Create Post</p><br>
+            <label for="title">Title</label><br>
+            <input class="form-input" type="text" placeholder="Title">
+            <br><br>
+            
+            <label for="content">Content</label><br>
+            <textarea class="form-input" placeholder="Type content"></textarea> 
+            <br><br>
+
+           <!-- The accept attribute takes as its value a string containing
+             one or more of unique file type specifiers.we accpeting any image file 
+             (ie both standard iimage formart and pdf files
+            -->
+            <label for="image">Image</label><br>
+            <input  class="form-input" type="file" type="text"  name="files" accept="image/*,.pdf">
+            <br><br>
+
+            <label for="autor">Author</label><br>
+            <input class="form-input" type="text" placeholder="Enter Author">
+             <br><br>
+            
+            <div class="submit-wrapper">
+             <input type="submit" value="Add Post">
+            </div>
+          </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+
+body{
+	margin:70px;
+	width: 100%;
+}
+/* style header section */
+header{
+	background-image: url(m2.jpg);
+	height: 550px;
+	width: 1000px;
+	margin-left: 35px;
+}
+/* style it layout */
+.head_layout{
+	display: inline-flex;
+	justify-content: space-around;
+	padding: 40px;
+}
+
+.date_nav{
+ display: block;
+ padding: 5px;
+ margin: 0px;
+ /* float: right; */
+}
+/* style d date */
+#date{
+    margin: 0px ;
+    /* text-align: right; */
+    padding: 0px;
+}
+
+/* style navigation with it list */
+nav{
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+ul { 
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  display: inline-flex;
+}
+li {
+  float: right;
+  padding: 5px;
+}
+li a:hover {  /*hover over nav content*/
+  outline:1px solid red ;
+  text-decoration:underline;
+  padding: 15px
+}
+
+/*start with outer dropdowm container*/
+    li.dropdown {
+       display: inline-block;
+     }
+  /* style Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+            display:none;
+            position: absolute;
+            background-color: #f9f9f9;
+            overflow: auto;
+            box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.2);/* make the dropdown menu look like a "card".*/
+            padding:1px;
+            z-index: 1; /* he z-index property specifies the stack order of an element */
+             }
+  /*style  Links inside the dropdown */
+    .dropdown-content a {
+               display: block;
+                color: black;
+               padding: 9px;
+               text-decoration: none;
+                text-align:left;
+            }
+  /* Change color of dropdown links on hover
+      we hover over the dropdown content */
+    .dropdown:hover .dropdown-content {display: block;}
+
+
+    /* style section for image placements */
+  #content-section{
+  margin: 35px;
+   }
+ /* style the child container layout for images*/
+  .imagegrid{
+   display: grid;
+   /* minwidth--250px n maxwidth--1fr ..auto-fit gives
+   it fixed position...repeat --repeat itsef*/
+   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+   grid-gap:2px;
+   }
+ /* style each image in the layout  */
+  .imagegrid img{
+   width: 250px;
+   height: 250px;
+   }
+ /* hover over the images */
+  .imagegrid img:hover{
+   cursor: pointer;
+  }
+/* style beneath descriptions of images */
+  .img-describe{
+   margin-bottom: 20px;
+   background-color: aliceblue;
+   width: 250px;  /*same width as image width */
+  }
+
+/* style all html basi elements used */
+h1{
+   font-family: cursive;
+   margin-right: 300px;
+   font-size:larger;
+   text-align: center;
+}
+h2{
+	text-align: center;
+	color: red;
+	font-family:cursive;
+}
+
+p{
+	text-align: center;
+	color: #B8860B;
+	font-size:medium;
+}
+h3{
+	font-family: serif;
+	color:darkcyan;
+}
+
+
+
+/* style the footer section */
+/* footer{ */
+    /* background-color: blue; */
+	/* text-decoration: none; */
+	/* border:5px solid block; */
+	/* border-width: 25px; */
+	/* } */
+    /* style image galley after  footer */
+/* gal_img{
+    display: grid;
+    width:255px;
+   height:255px;   
+} */
+
+
+.btn-alt {
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+.btn {
+	border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    display:flex;  
+    margin: 0;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/*#outer1{
+	background-image: url(m2.jpg);
+	width:100%;
+}*/
+

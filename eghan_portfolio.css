@@ -1,6 +1,6 @@
-/* this is the css file for creating the porfolio */
+/* style sheet for portfolio */
 
-/* sytle the main body */
+/* body style */
 .body_container {
   max-width: 840px;
   margin: 0 auto;
@@ -9,71 +9,72 @@
   margin-bottom: 20%;
   margin-top: 5%;
 }
-
-/* style the intro section */
 .introduction{
     text-align: center;
 }
-/* style the image used in intro section */
+/* image in intro section */
 .introduction img{
-    width: 200px;
-    height: 180px;
-    border-radius: 70px;
+    width: 250px;
+    height: 190px;
+    border-radius: 90px;
     box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
     transition: all ease-in-out .2s;
     margin-top: 30px;
     filter: brightness(1.2);
 }
-/* hover over the image in intro section */
+/* hover over image */
 .introduction img:hover {
     cursor: pointer;
   box-shadow: 0 8px 12px 0 rgba(34,60,80,.16);
 }
-/* style header(h2,h3,h4),paragraph(p), list(li)*/
+
+/* style elemets */
 h2{
     font-family:sans-serif;
     font-style: italic;
+}
+
+h4{
+    text-align: right;
 }
 
 h3{
     text-align: center;
     font-family: monospace;
 }
-h4{
-    text-align: right;
-}
-
 li,p{
     font-family: monospace;  
     text-align: center; 
 }
-/* style the grid layout in about section */
+/* about section */
 .about_grid{
     display: grid;
     grid-template-columns: 50% 50%;
     text-align:center;
 }
-/* style the horizontal rule used */
+/* horizontal rule */
 hr {
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
-
+/* unordered list */
 ul{
 list-style: none;
 text-decoration: none;
 padding: 0px;
 }
-
-/* style the grid layout for the project holder section */
+/* projects section layoyt */
 .project_grid{
-    display: grid;
-    grid-template-columns: auto auto;
-    padding:0px;
-    margin:0px;
+   display: grid;
+   /* minwidth--250px n maxwidth--1fr ..auto-fit gives
+   it fixed position...repeat --repeat itsef*/
+   grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+   grid-gap:2px;
+    padding:10px;
+    margin:10px;
 }
-/* style the images used in the project section and hover on image */
+/* sigle images within project frame */
 .project_grid img{
     justify-self: center;
     padding: 2px;
@@ -82,16 +83,14 @@ padding: 0px;
     border-radius: 40px;
     margin-left: 80px;
     margin-right: 40px;
+     filter: brightness(1.25);
 }
-.project_grid img{
-    filter: brightness(1.25);
-}
-
+/* hover over image */
 .project_grid img:hover{
     filter: brightness(1.5);
     background-color: cadetblue;
 }
-/* style the final  section on links and contact*/
+/* last section for links and contacts */
 .links-and-contact {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -99,38 +98,38 @@ padding: 0px;
 .links {
   justify-self: center;
 }
-/* style the listed links */
+/* list of links */
 .links-list {
   list-style: none;
   padding: 0;
 }
 
-/* style forms for the contact */
-text{
-    width: 50%;
-    padding: 5px;
-}
-textarea{
-    width:56%;
-    border: 3px solid #cccccc;
-    padding: 10px;
-    font-family: Tahoma, sans-serif; 
-  }
-input[type=submit]{
-  width: 65%;
-  border: 3px solid #cccccc;
-  color:black;
-  padding: 10px;
-  cursor: pointer;
-}
-
-/* widowing the web on differnt platforms viewpoint */
 @media (max-width: 650px) {
   .links-and-contact {
     grid-template-columns: 100%;
   }
 }
+/* forms for contact */
+form{
+ float:right;
+}
 
+/* style all inputs of the form */
+.form-input {
+    /* display: block; */
+    width: 50%;
+    resize: none;
+    height: 15px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(231, 231, 231);
+   }
 
-
-
+/*style submit button  */
+   .submit-wrapper {
+    display:inline-block;
+    flex-direction: row-reverse;
+  
+   }

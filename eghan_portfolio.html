@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
-<!--   This a portfolio for mini projects i have done in learning html,css,javaScript   -->
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>my_portfolio </title>
         <!--add css n js style file-->
-        <link  rel="stylesheet" href="eghan_portfolio.css">
-        <script src="learn.js"></script>
+ <link  rel="stylesheet" href="eghan_portfolio.css">
+ <script src="learn.js"></script>
     </head>
 
     <body>
@@ -15,15 +14,15 @@
         
          <!--start intro part -->
         <div class=introduction>
-          <img src="m8.JPG" alt=""/>
+          <img src="m3.jpg" alt=""/>
           <h2>Rhydal Esi Eghan</h2>
           <p>(Pause and Ponder)</p>
         </div> <!--end intro-->
-       <hr>
-         
-        <!-- start about section which i did in 2 groups.about & interest -->
-         
+        
+        <hr>
+        <!-- start about section -->
         <div class="about_grid">
+         
             <div>
             <h3>About</h3>
             <ul>
@@ -41,70 +40,65 @@
               <li> Baking</li> 
               </ul>
           </div>
+
         </div> <!--end of about section-->
      <hr>
-         
-         
-         <!-- portfolio section. this section contains the projects done -->
-        <!-- 4 projects so far.conference.page, busines.page, fomrs.page,youtube clone.page          -->
-        <div>  <!--conatiner to hold all projects-->
+         <!-- portfolio section -->
+        <div> 
            <h3>My projects</h3>
-            <div class="project_grid"> <!--have a grid layout for projects-->
-            
-             <!--project1-->
+            <div class="project_grid">
+
             <div>
-                <img src="m4.jpg" alt="">
+                <img src="m4.jpg" alt="conference page">
               <a href="math_conference.html"> <p>Project_1(Event-page)</p></a> 
             </div>
-                
-                <!--project2--> 
             <div>
-                 <img src="form.svg" alt=""/>
-                 <a href="goodvibes_form.html"><p>Project_2(Form creation)</p></a>
+                 <img src="form.svg" alt="forms page"/>
+                 <a href="bootform.html"><p>Project_2(Forms Page)</p></a>
             </div>
-              
-                 <!--project3-->
             <div>
-                 <img src="log3.png" alt=""/>
-                <a href="math_conference.html"><p>Project_3(Business page)</p></a> 
+                 <img src="log3.png" alt="business page"/>
+                <a href="breakfast_website.html"><p>Project_3(Business page)</p></a> 
             </div>
-                
-                 <!--project4-->
             <div>
-                 <img src="tune2.jpeg" alt=""/>
-                 <a href=''><p>Project_4(Youtube channel)</p></a>
+                 <img src="adventure.jpeg" alt="adventurepage"/>
+                 <a href="photogalex.html"><p>Project_4(Adventures)</p></a>
             </div>
-            
-            </div> <!--end grid-layout for projects-->
-        </div>  <!-- end of conatiner holding all projects-->
+            <!-- <img src="https://via.placeholder.c" alt=""/> -->
+            </div>
+        </div>  
         
 
-        <!-- links and contact section -->
+        <!-- links and contact -->
 
-        <div class="links-and-contact"> 
+        <div class="links-and-contact">
            
           <div class="links">
             <h3> Links</h3>
             <ul class="link-list">
-              <li> <a href="https://web.nims.edu.gh">Nims-gh</a></li><br>
-              <li> <a href="https://web.facebook.gh">Facebook</a></li><br>
-              <li> <a href="https://web.knust.math.edu.gh">Knust</a></li><br>
+              <li> <a href="http://www.nims.edu.gh/about-nims/graduate_students/eghan-rhydal-esi">Nims-gh</a></li>
+              <!-- <li> <a href="https://web.facebook.gh">Facebook</a></li><br> -->
+              <li> <a href="https://web.knust.math.edu.gh">Github</a></li>
               <li> <a href="https://web.linkin">Linkin</a></li>
+              <li><a href="https://scholar.google.com/citations?user=PSVBRg4AAAAJ&hl=en">google-scholar</a></li>
+              <li><a href="https://www.semanticscholar.org/author/Eghan-Esi-Rhydal/117363238">semantic-scholar</a></li>
+              <li><a href="https://twitter.com/trendylukzz?lang=en">twitter</a></li>
             </ul>
           </div>
          
           <div>
           <h3>Contact</h3>
              <form action="">
-             <label for="email"><h3>Email</h3></label>
-             <input type="text" id="email"></br>
-             <label for="message" ><h3>Message</h3></label>
-             <textarea placeholder="enter message here" id="message"></textarea><br>
+             <label for="email">Email:</label><br>
+             <input class="form-input" type="text" id="email"></br>
+             <label for="message" >Message:</label><br>
+             <textarea  class="form-input" placeholder="enter message here" id="message"></textarea><br>
+             <div class="submit-wrapper">
              <input type="submit" value="Submit">
+             </div>
             </form>
            </div> 
-         
-        </div>  <!--end link and contact section-->
-        
+
+        </div>
     </body>
 </html>
